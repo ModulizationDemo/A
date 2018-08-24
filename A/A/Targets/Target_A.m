@@ -13,6 +13,11 @@
 
 - (UIViewController *)Action_viewController:(NSDictionary *)params
 {
+    typedef void (^CallbackType)(NSString *);
+    CallbackType callback = params[@"callback"];
+    if (callback) {
+        callback(@"success");
+    }
     AViewController *viewController = [[AViewController alloc] init];
     return viewController;
 }
