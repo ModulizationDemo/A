@@ -10,6 +10,7 @@
 
 @interface Target_A : NSObject
 
-- (UIViewController *)Action_viewController:(NSDictionary *)params;
+- (UIViewController *)Action_Category_viewController:(NSDictionary *)params;
+- (UIViewController *)Action_Extension_viewController:(NSDictionary *)params;
 
 @end
